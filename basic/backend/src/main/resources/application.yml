@@ -1,0 +1,17 @@
+server:
+  port: 9000
+security:
+  sessions: NEVER
+spring:
+  session:
+    store-type: redis
+  redis:
+    connect-timeout: 2s
+    host: localhost
+    port: 6379
+    timeout: 500ms
+logging:
+  level:
+    org.springframework:
+      security: DEBUG
+      session: TRACE
